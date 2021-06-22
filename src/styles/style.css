@@ -1,1 +1,94 @@
-/* default css */
+/* fonts */
+@font-face {
+  font-weight: 400;
+  font-family: 'Neucha';
+  src: url('../../assets/fonts/Neucha-Regular.ttf');
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: 'OpenSans';
+  src: url('../../assets/fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: 'OpenSans';
+  src: url('../../assets/fonts/OpenSans-Bold.ttf');
+}
+
+/* ---- RESET RULES ---- */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+section,
+h1,
+h2,
+h3,
+p,
+span {
+  margin: 0;
+}
+
+/* Make images easier to work with */
+img {
+  display: block;
+
+  max-width: 100%;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+
+  overflow-x: hidden;
+
+  color: var(--dark);
+  font-size: 16px;
+  font-family: 'OpenSans', sans-serif;
+  line-height: 1.6em;
+}
+
+/* Set title defaults */
+h1,
+h2,
+h3 {
+  font-weight: 400;
+  font-family: 'Neucha', sans-serif;
+
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+/* default color */
+:root {
+  --white: #fff;
+  --white-light: #d7ccc0;
+  --light: #f5f4f0;
+  --default: #fe8a02;
+  --default-hover: #ea7600;
+  --default-dark: #42413c;
+  --dark: #2a2626;
+  --dark-light: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
+}
