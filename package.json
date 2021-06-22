@@ -1,0 +1,23 @@
+{
+  "name": "layout-designer-project-lvl1",
+  "version": "1.0.0",
+  "description": "HTML5/CSS with HTMLHint and StyleLint",
+  "main": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alaska90/layout-designer-project-lvl1.git"
+  },
+  "author": "Kozlov Ievgenii",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alaska90/layout-designer-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/Alaska90/layout-designer-project-lvl1#readme",
+  "devDependencies": {
+    "htmlhint": "^0.15.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-order": "^4.1.0"
+  }
+}
