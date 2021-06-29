@@ -110,6 +110,10 @@ input {
 /* ---- CSS STYLE ---- */
 
 /* Background */
+.bg-main-dark {
+  background: var(--main-dark);
+}
+
 .bg-light {
   background: var(--light);
 }
@@ -141,6 +145,13 @@ input {
   display: flex;
 }
 
+.align-center {
+  align-items: center;
+}
+
+.flex-column{
+  flex-direction: column;
+}
 
 /* Text column width */
 .col-item {
@@ -148,8 +159,17 @@ input {
 }
 
 /* Text */
+.text-center {
+  text-align: center;
+}
+
 .text-orange {
   color: var(--main);
+}
+
+/* Video */
+.video {
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
 /* Image */
@@ -157,6 +177,8 @@ input {
   position: absolute;
 
   content: '';
+
+  height: 525px;
 
   top: 55px;
   right: -270px;
@@ -176,6 +198,14 @@ input {
 
   font: bold 16px/26px 'OpenSans';
   border: none;
+
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn-header:hover {
+  background: var(--main-hover);
+
 }
 
 /* Margin */
@@ -183,8 +213,15 @@ input {
   margin-right: 30px;
 }
 
-.mb-220 {
-  margin-bottom: 220px;
+.mb-200 {
+  margin-bottom: 200px;
+}
+
+.mb-200-negative {
+  margin-bottom: -200px;
+}
+.mb-30 {
+  margin-bottom: 30px;
 }
 
 .mb-40 {
