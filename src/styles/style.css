@@ -40,8 +40,6 @@ span {
 /* Make images easier to work with */
 img {
   display: block;
-
-  max-width: 100%;
 }
 
 /* ---- DEFAULTS STYLE ---- */
@@ -126,6 +124,10 @@ input {
   background: var(--main-dark);
 }
 
+.bg-white {
+  background: var(--white);
+}
+
 .bg-brown {
   background: var(--brown);
 }
@@ -177,9 +179,13 @@ input {
   flex-direction: column;
 }
 
-/* Text column width */
+/* Content column width */
 .col-item {
-  flex-basis: 540px;
+  flex-basis: 100%;
+}
+
+.col-item + .col-item {
+  margin-left: 30px;
 }
 
 /* Text */
@@ -201,6 +207,14 @@ input {
 
 .text-white {
   color: var(--white);
+}
+
+.text-white-light {
+  color: var(--white-light)
+}
+
+.text-brown {
+  color: var(--brown);
 }
 
 .text-orange {
