@@ -57,15 +57,6 @@ body {
   line-height: 1.6em;
 }
 
-/* Main container */
-.container {
-  width: 1110px;
-  margin: 0 auto;
-  padding: 100px 0;
-
-  z-index: 0;
-}
-
 /* Set title defaults */
 h1,
 h2,
@@ -118,6 +109,14 @@ input {
 }
 
 /* ---- CSS STYLE ---- */
+/* Main container */
+.container {
+  z-index: 0;
+
+  width: 1110px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
 
 /* Background */
 .bg-main-dark {
@@ -141,8 +140,6 @@ input {
 }
 
 .bg-before::before {
-  position: absolute;
-
   content: '';
 
   width: 100%;
@@ -298,7 +295,36 @@ img {
 
 .btn-header:hover {
   background: var(--main-hover);
+}
 
+.btn-form {
+  background: var(--main);
+
+  width: 70px;
+
+  padding: 12px 24px;
+
+  border:none;
+}
+
+.btn-form::before {
+  position: absolute;
+  content: '';
+
+  top: 15px;
+  right: 25px;
+
+  width: 20px;
+  height: 20px;
+
+  background-image: url(../images/send.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn-form:hover,
+.btn-form:focus {
+  background: var(--main-hover);
 }
 
 /* Margin */
@@ -339,6 +365,10 @@ img {
   padding-top: 200px;
 }
 
+.p-55 {
+  padding: 55px;
+}
+
 /* Font-size */
 .fs-16 {
   font-size: 16px;
@@ -346,4 +376,43 @@ img {
 
 .fs-52 {
   font-size: 52px;
+}
+
+/* --------- FOOTER --------- */
+.form-label {
+  font: normal 18px/29px OpenSans, sans-serif;
+}
+
+.form-input {
+  flex-grow: 1;
+
+  padding: 15px;
+
+  height: 50px;
+
+  border: none;
+}
+
+.form-privacy {
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+.form-link {
+  color: var(--white);
+}
+
+.info {
+  margin-top: 60px;
+
+  font: normal 14px/22px OpenSans, sans-serif;
+  text-align: center;
+}
+
+.info p {
+  margin-bottom: 16px;
+}
+
+.info a {
+  color: var(--blue);
 }
