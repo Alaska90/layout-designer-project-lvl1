@@ -2,19 +2,19 @@
 @font-face {
   font-weight: 400;
   font-family: 'Neucha';
-  src: url('../../assets/fonts/Neucha-Regular.ttf');
+  src: url('../assets/fonts/Neucha-Regular.ttf');
 }
 
 @font-face {
   font-weight: 400;
   font-family: 'OpenSans';
-  src: url('../../assets/fonts/OpenSans-Regular.ttf');
+  src: url('../assets/fonts/OpenSans-Regular.ttf');
 }
 
 @font-face {
   font-weight: 700;
   font-family: 'OpenSans';
-  src: url('../../assets/fonts/OpenSans-Bold.ttf');
+  src: url('../assets/fonts/OpenSans-Bold.ttf');
 }
 
 /* ---- RESET RULES ---- */
