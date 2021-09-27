@@ -111,8 +111,6 @@ input {
 /* ---- CSS STYLE ---- */
 /* Main container */
 .container {
-  z-index: 0;
-
   width: 1110px;
   margin: 0 auto;
   padding: 100px 0;
@@ -136,12 +134,13 @@ input {
 }
 
 .bg-before {
+  z-index: 0;
   overflow: hidden;
 }
 
 .bg-before::before {
   position: absolute;
-  content: '';
+  z-index: -1;
 
   width: 100%;
   height: 100%;
@@ -150,6 +149,9 @@ input {
   background-image: url(../images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
+
+  content: '';
+
 }
 
 /* Position */
@@ -274,7 +276,7 @@ img {
   top: 55px;
   right: -270px;
 
-  z-index: -1;
+  z-index: 1;
 }
 
 /* Button */
