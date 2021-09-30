@@ -264,6 +264,10 @@ input {
   background: var(--light);
 }
 
+.info a {
+  color: var(--blue);
+}
+
 .card:focus,
 .card:focus h3,
 .card:focus a,
@@ -423,8 +427,4 @@ input {
 
 .info p {
   margin-bottom: 16px;
-}
-
-.info a {
-  color: var(--blue);
 }
